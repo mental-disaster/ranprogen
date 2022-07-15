@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: {DB명}
+    url: {DBurl}
+    username: {사용자계정}
+    password: {비밀번호}
