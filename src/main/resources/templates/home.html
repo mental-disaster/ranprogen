@@ -26,11 +26,12 @@
 <script>
     function askQuestion() {
         $.ajax({
-            url:'test'
+            url:'/answer'
             ,method:'GET'
-            ,success: function(data){
-                $(".result").empty()
-                $(".result").append("<h3>"+data+"</h3>")
+            ,success: function(answer){
+                let res = $(".result")
+                res.empty()
+                res.append("<h3>"+answer+"</h3>")
             }
         })
     }
